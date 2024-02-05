@@ -1,2 +1,2 @@
 # projectContext
-Project Context HKU Bob, Cielke, Jass &amp; Eva
+Project Context HKU Bob, Cielke, Jess &amp; Eva
