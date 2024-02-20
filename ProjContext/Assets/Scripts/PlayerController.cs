@@ -20,6 +20,12 @@ namespace TarodevController
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
 
+        //New Input System variables
+        [SerializeField] private int playerIndex = 0;
+        private Vector2 _moveVector;
+        private bool jumpPressed;
+        private bool jumpHeld;
+
         #region Interface
 
         public Vector2 FrameInput => _frameInput.Move;
@@ -44,13 +50,16 @@ namespace TarodevController
             GatherInput();
         }
 
+
         private void GatherInput()
         {
             _frameInput = new FrameInput
             {
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
-                Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
+                //JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
+                //JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
+                JumpDown = jumpPressed,
+                JumpHeld = jumpHeld,
+                Move = _moveVector
             };
 
             if (_stats.SnapInput)
@@ -77,8 +86,32 @@ namespace TarodevController
             ApplyMovement();
         }
 
+        public int GetPlayerIndex()
+        {
+            return playerIndex;
+        }
+
+        #region NewInputSystem
+
+        public void SetMoveVector(Vector2 moveVector)
+        {
+            _moveVector = moveVector;
+        }
+
+        public void SetJumpPressed(bool isPressed)
+        {
+            jumpPressed = isPressed;
+        }
+
+        public void SetJumpHeld(bool isHeld)
+        {
+            jumpHeld = isHeld;
+        }
+
+        #endregion
+
         #region Collisions
-        
+
         private float _frameLeftGrounded = float.MinValue;
         private bool _grounded;
 

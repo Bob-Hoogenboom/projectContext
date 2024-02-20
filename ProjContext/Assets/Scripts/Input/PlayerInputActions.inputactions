@@ -2,7 +2,7 @@
     "name": "PlayerInputActions",
     "maps": [
         {
-            "name": "Movement",
+            "name": "PlayerMovement",
             "id": "8a556239-9465-41f2-bc30-47e628f07834",
             "actions": [
                 {
@@ -16,8 +16,17 @@
                 },
                 {
                     "name": "Jumping",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "212d7ae4-292a-49b9-be87-624252e46c32",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "3cb32d8e-1943-45f4-b0ce-75ecea9a16bd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -26,7 +35,7 @@
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
+                    "name": "WASD",
                     "id": "e7e12b55-f899-4faf-9f7d-0e411d365971",
                     "path": "2DVector",
                     "interactions": "",
@@ -82,12 +91,56 @@
                 },
                 {
                     "name": "",
+                    "id": "5608bfea-a90e-4a39-811a-d8d8b8331dc8",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Walking",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "175fe3b4-1bfd-4a4c-b3cb-b3448d074774",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Jumping",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c4f06a89-36d3-4ba3-b3d5-2a400ce5aec0",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jumping",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d602804-797f-4c86-8c17-25e85bcdafcf",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0cc3e7dc-e7df-48a8-8efb-a606a6485833",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
