@@ -35,6 +35,9 @@ public class InputHandler : MonoBehaviour
 
     public void OnGrab(CallbackContext context)
     {
-
+        if (context.canceled)
+        {
+            _playerController.OnGrab();
+        }
     }
 }

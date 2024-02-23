@@ -18,15 +18,15 @@ MonoBehaviour:
   SnapInput: 1
   VerticalDeadZoneThreshold: 0.3
   HorizontalDeadZoneThreshold: 0.1
-  MaxSpeed: 10
-  Acceleration: 100
-  GroundDeceleration: 55
-  AirDeceleration: 25
+  MaxSpeed: 5
+  Acceleration: 50
+  GroundDeceleration: 27.5
+  AirDeceleration: 12.5
   GroundingForce: -1.5
   GrounderDistance: 0.05
-  JumpPower: 36
-  MaxFallSpeed: 40
-  FallAcceleration: 110
-  JumpEndEarlyGravityModifier: 3
+  JumpPower: 18
+  MaxFallSpeed: 30
+  FallAcceleration: 75
+  JumpEndEarlyGravityModifier: 1.5
   CoyoteTime: 0.15
   JumpBuffer: 0.2

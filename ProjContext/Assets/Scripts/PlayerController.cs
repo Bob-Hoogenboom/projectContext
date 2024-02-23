@@ -14,6 +14,7 @@ namespace TarodevController
     public class PlayerController : MonoBehaviour, IPlayerController
     {
         [SerializeField] private ScriptableStats _stats;
+        private PlayerGrabHandler _grabHandler;
         private Rigidbody2D _rb;
         private CapsuleCollider2D _col;
         private FrameInput _frameInput;
@@ -40,6 +41,7 @@ namespace TarodevController
         {
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<CapsuleCollider2D>();
+            _grabHandler = GetComponent<PlayerGrabHandler>();
 
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
@@ -106,6 +108,11 @@ namespace TarodevController
         public void SetJumpHeld(bool isHeld)
         {
             jumpHeld = isHeld;
+        }
+
+        public void OnGrab()
+        {
+            _grabHandler.Grab();
         }
 
         #endregion
