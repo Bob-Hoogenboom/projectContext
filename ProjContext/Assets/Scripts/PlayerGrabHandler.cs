@@ -17,6 +17,7 @@ public class PlayerGrabHandler : MonoBehaviour
     private RaycastHit2D hit;
     private Vector2 grabDir;
     private bool _isHolding = false;
+    private bool prevIsLeft = false;
 
 
     // Start is called before the first frame update
@@ -34,7 +35,7 @@ public class PlayerGrabHandler : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        grabDir = isOwl ? Vector2.down : Vector2.right;
+        //grabDir = isOwl ? Vector2.down : Vector2.right;
 
         Gizmos.color = (isOwl) ? Color.red : Color.blue;
         Gizmos.DrawRay(transform.position, grabDir * reach);
@@ -51,7 +52,7 @@ public class PlayerGrabHandler : MonoBehaviour
         if (!_isHolding)
         {
             fixedJoint2D.enabled = true;
-            fixedJoint2D.connectedBody = this.GetComponent<Rigidbody2D>();
+            fixedJoint2D.connectedBody = GetComponent<Rigidbody2D>();
             _isHolding = true;
         }
         else
@@ -61,6 +62,28 @@ public class PlayerGrabHandler : MonoBehaviour
         }
 
     }
+
+    public void GrabHandlerLeft(bool isLeft)
+    {
+        if (isLeft != prevIsLeft) // Compare current isLeft with previous value
+        {
+            if (isLeft)
+            {
+                //moves Left
+                grabDir = new Vector2(-Mathf.Abs(grabDir.x), grabDir.y); //Flips the grab direction left
+            }
+            else
+            {
+                //moves right
+                grabDir = new Vector2(Mathf.Abs(grabDir.x), grabDir.y); // Flips the grab direction (back) right
+            }
+
+            // Update prevIsLeft with the current value of isLeft
+            prevIsLeft = isLeft;
+        }
+    }
 }
+
+
 
 
