@@ -204,17 +204,6 @@ namespace TarodevController
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
 
             }
-                
-            //flip the grab direction when moved left or right*
-            if (_frameInput.Move.x < 0)
-            {
-               _grabHandler.GrabHandlerLeft(true);
-            }
-
-            if (_frameInput.Move.x > 0)
-            {
-                _grabHandler.GrabHandlerLeft(false);
-            }
         }
 
         #endregion

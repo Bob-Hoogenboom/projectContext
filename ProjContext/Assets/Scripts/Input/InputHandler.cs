@@ -11,13 +11,13 @@ using static UnityEngine.InputSystem.InputAction;
 /// </summary>
 public class InputHandler : MonoBehaviour
 {
-    private PlayerController _playerController;
+    private PlayerMovement _playerController;
     private PlayerInput _playerInput;
 
     private void Awake()
     {
         _playerInput = GetComponent<PlayerInput>();
-        var players = FindObjectsOfType<PlayerController>();
+        var players = FindObjectsOfType<PlayerMovement>();
         var index = _playerInput.playerIndex;
         _playerController = players.FirstOrDefault(m => m.GetPlayerIndex() == index);
 ;    }
@@ -29,8 +29,7 @@ public class InputHandler : MonoBehaviour
 
     public void OnJumping(CallbackContext context)
     {
-        _playerController.SetJumpPressed(context.performed);
-        _playerController.SetJumpHeld(context.ReadValueAsButton());
+        _playerController.SetJumpBool(context.performed);
     }
 
     public void OnGrab(CallbackContext context)
