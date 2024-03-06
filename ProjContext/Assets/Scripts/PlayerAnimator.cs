@@ -74,7 +74,7 @@ namespace TarodevController
         private void HandleIdleSpeed()
         {
             var inputStrength = Mathf.Abs(_player.FrameInput.x);
-            _anim.SetFloat(IdleSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
+            _anim.SetFloat(WalkSpeedKey, Mathf.Lerp(1, _maxIdleSpeed, inputStrength));
             _moveParticles.transform.localScale = Vector3.MoveTowards(_moveParticles.transform.localScale, Vector3.one * inputStrength, 2 * Time.deltaTime);
         }
 
@@ -137,7 +137,7 @@ namespace TarodevController
         }
 
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
-        private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
+        private static readonly int WalkSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
     }
 }
