@@ -1063,6 +1063,7 @@ GameObject:
   - component: {fileID: 1257965775}
   - component: {fileID: 1257965777}
   - component: {fileID: 1257965776}
+  - component: {fileID: 1257965778}
   m_Layer: 5
   m_Name: OwlMenu
   m_TagString: Untagged
@@ -1088,7 +1089,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -480, y: 270}
-  m_SizeDelta: {x: 370, y: 454.5}
+  m_SizeDelta: {x: 420, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1257965776
 MonoBehaviour:
@@ -1110,7 +1111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bed5632942fe18a4ba2ffe4fab32d61c, type: 3}
+  m_Sprite: {fileID: -173160748, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1128,6 +1129,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257965774}
   m_CullTransparentMesh: 1
+--- !u!114 &1257965778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257965774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ccedfde6a55564fbea6b6d81698727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 1257965776}
+  sprites:
+  - {fileID: -173160748, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
+  - {fileID: 947646650, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
+  - {fileID: -1572522540, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
+  - {fileID: -2050887799, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
+  - {fileID: 924329333, guid: 0bfd326e4e0a82a44904f0cd45053625, type: 3}
+  speed: 0.05
+  playOnStart: 1
 --- !u!1 &1311512230
 GameObject:
   m_ObjectHideFlags: 0
