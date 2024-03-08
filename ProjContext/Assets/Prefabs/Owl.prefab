@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6491350716621291919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19724,7 +19724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6491350717812522830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19772,12 +19772,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bed5632942fe18a4ba2ffe4fab32d61c, type: 3}
+  m_Sprite: {fileID: 1745510896, guid: 721ff11c6dab19b4a944f189957691d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1, y: 1.4}
+  m_Size: {x: 1.4, y: 1.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -19793,7 +19793,7 @@ Animator:
   m_GameObject: {fileID: 6491350717812522830}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6e5b5f4662f713845b0c28185c4ea62c, type: 2}
+  m_Controller: {fileID: 9100000, guid: db66d9e0b14151a4abd19e603d8dc787, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -34457,9 +34457,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7371941236541672137}
   - component: {fileID: 7371941236541672138}
+  - component: {fileID: 2513651261401060730}
   - component: {fileID: 7371941236541672139}
   - component: {fileID: 7371941236541672136}
-  - component: {fileID: 2513651261401060730}
   m_Layer: 6
   m_Name: Owl
   m_TagString: Untagged
@@ -34496,7 +34496,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 33cb79fcecfe023438dba75afac9bed1, type: 2}
-  playerIndex: 0
+  playerIndex: 1
+--- !u!114 &2513651261401060730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7371941236541672134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a24c10d157a9f84a8a6b36db0b303e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  reach: 1
+  isOwl: 1
 --- !u!50 &7371941236541672139
 Rigidbody2D:
   serializedVersion: 4
@@ -34534,20 +34551,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.9, y: 1.4}
   m_Direction: 0
---- !u!114 &2513651261401060730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7371941236541672134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a24c10d157a9f84a8a6b36db0b303e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  reach: 1
-  isOwl: 1

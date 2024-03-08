@@ -120,7 +120,7 @@ TextureImporter:
       name: A_PlayerOwl_IdleAnimationsheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 225
         y: 0
         width: 225
         height: 225
@@ -141,7 +141,7 @@ TextureImporter:
       name: A_PlayerOwl_IdleAnimationsheet_1
       rect:
         serializedVersion: 2
-        x: 225
+        x: 450
         y: 0
         width: 225
         height: 225
@@ -162,7 +162,7 @@ TextureImporter:
       name: A_PlayerOwl_IdleAnimationsheet_2
       rect:
         serializedVersion: 2
-        x: 450
+        x: 675
         y: 0
         width: 225
         height: 225
@@ -183,7 +183,7 @@ TextureImporter:
       name: A_PlayerOwl_IdleAnimationsheet_3
       rect:
         serializedVersion: 2
-        x: 675
+        x: 900
         y: 0
         width: 225
         height: 225

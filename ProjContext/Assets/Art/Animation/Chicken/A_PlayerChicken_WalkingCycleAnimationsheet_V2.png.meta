@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f777d6bde3d7114697a30c2987e5e7c
+guid: d641156dbc2f5144a8d3062f99302f4b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: A_PlayerChicken_WalkingCycleAnimationsheet_0
+      name: A_PlayerChicken_WalkingCycleAnimationsheet_V2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3ee72dda54bb3442b3446e4de08b206
-      internalID: -1070535462
+      spriteID: e3f40d0c60b0d5f418947996c68f146e
+      internalID: -1110189247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: A_PlayerChicken_WalkingCycleAnimationsheet_1
+      name: A_PlayerChicken_WalkingCycleAnimationsheet_V2_1
       rect:
         serializedVersion: 2
         x: 225
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a079fd315842fc145beb266a555b33cd
-      internalID: -2127972925
+      spriteID: 466a49db47392084db585bd63a74fff1
+      internalID: 193056922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: A_PlayerChicken_WalkingCycleAnimationsheet_2
+      name: A_PlayerChicken_WalkingCycleAnimationsheet_V2_2
       rect:
         serializedVersion: 2
         x: 450
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa19153498abe4b40af782ddc07e3ce7
-      internalID: 1285674582
+      spriteID: 5faa07f38cf2b5a479390edd5d1e167c
+      internalID: 172643743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: A_PlayerChicken_WalkingCycleAnimationsheet_3
+      name: A_PlayerChicken_WalkingCycleAnimationsheet_V2_3
       rect:
         serializedVersion: 2
         x: 675
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86850918dae10804c821801332142fda
-      internalID: 536349034
+      spriteID: d2b8168b12171a94b8331e175ffcb948
+      internalID: 1925048594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: A_PlayerChicken_WalkingCycleAnimationsheet_4
+      name: A_PlayerChicken_WalkingCycleAnimationsheet_V2_4
       rect:
         serializedVersion: 2
         x: 900
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fc1654f28aa8504e9d7ed161baf244b
-      internalID: -2076133989
+      spriteID: a1964628eadfb7b468f582af1b61e0bc
+      internalID: -131800717
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      A_PlayerChicken_WalkingCycleAnimationsheet_0: -1070535462
-      A_PlayerChicken_WalkingCycleAnimationsheet_1: -2127972925
-      A_PlayerChicken_WalkingCycleAnimationsheet_2: 1285674582
-      A_PlayerChicken_WalkingCycleAnimationsheet_3: 536349034
-      A_PlayerChicken_WalkingCycleAnimationsheet_4: -2076133989
+      A_PlayerChicken_WalkingCycleAnimationsheet_V2_0: -1110189247
+      A_PlayerChicken_WalkingCycleAnimationsheet_V2_1: 193056922
+      A_PlayerChicken_WalkingCycleAnimationsheet_V2_2: 172643743
+      A_PlayerChicken_WalkingCycleAnimationsheet_V2_3: 1925048594
+      A_PlayerChicken_WalkingCycleAnimationsheet_V2_4: -131800717
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -854,7 +854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1070535462, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
+  m_Sprite: {fileID: -1110189247, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -886,11 +886,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Image: {fileID: 1027517815}
   sprites:
-  - {fileID: -1070535462, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
-  - {fileID: -2127972925, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
-  - {fileID: 1285674582, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
-  - {fileID: 536349034, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
-  - {fileID: -2076133989, guid: 1f777d6bde3d7114697a30c2987e5e7c, type: 3}
+  - {fileID: -1110189247, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
+  - {fileID: 193056922, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
+  - {fileID: 172643743, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
+  - {fileID: 1925048594, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
+  - {fileID: -131800717, guid: d641156dbc2f5144a8d3062f99302f4b, type: 3}
   speed: 0.05
   playOnStart: 1
 --- !u!1 &1055918803
