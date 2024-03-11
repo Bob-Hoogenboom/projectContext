@@ -141,6 +141,7 @@ namespace TarodevController
                 _bufferedJumpUsable = true;
                 _endedJumpEarly = false;
                 GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
+                Debug.Log("State changed to grounded");
             }
             // Left the Ground
             else if (_grounded && !groundHit)
@@ -148,6 +149,7 @@ namespace TarodevController
                 _grounded = false;
                 _frameLeftGrounded = _time;
                 GroundedChanged?.Invoke(false, 0);
+                Debug.Log("State changed to Airborn");
             }
 
             Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
