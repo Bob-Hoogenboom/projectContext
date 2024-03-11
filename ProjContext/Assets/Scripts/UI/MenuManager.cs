@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("CharConTest");
+        SceneManager.LoadScene("Demo");
     }
 
     public void Controls()
