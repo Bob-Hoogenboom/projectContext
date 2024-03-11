@@ -12,8 +12,8 @@ namespace TarodevController
 
         [SerializeField] private SpriteRenderer _sprite;
 
-        [Header("Settings")] [SerializeField, Range(1f, 3f)]
-        private float _maxIdleSpeed = 2;
+/*        [Header("Settings")] [SerializeField, Range(1f, 3f)]
+        private float _maxIdleSpeed = 2;*/
 
         [SerializeField] private float _maxTilt = 5;
         [SerializeField] private float _tiltSpeed = 20;
