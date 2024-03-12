@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e5772e683fdc2b43a97ac8af52166f0
+guid: dfcfd46972681b94ea38f593649a0f46
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,97 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TM_LevelBorder_Test_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e92da633f4cd0a049a806c504d9d1704
-      internalID: -1679108040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TM_LevelBorder_Test_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91d6f9019c7fefd42a1e66de301ce289
-      internalID: -1396634075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TM_LevelBorder_Test_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbd00f61a8054e749ae803fe53cbe6c7
-      internalID: 739012851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TM_LevelBorder_Test_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e0265d483081c049bb65f8336bf0790
-      internalID: 1835376740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TM_LevelBorder_Test_4
+      name: A_PlayerChicken_FlyingAnimationsheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 225
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17512e0f06fd3f7489a2e8ade8c70f2b
-      internalID: 159093283
+      spriteID: 93868c867514bcc4eb012721dbf11010
+      internalID: -184324839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TM_LevelBorder_Test_5
+      name: A_PlayerChicken_FlyingAnimationsheet_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 225
         y: 0
-        width: 512
-        height: 512
+        width: 225
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddece369234665f4c9f9d6475d1ff5c9
-      internalID: 893267106
+      spriteID: 429eeb9d919b9e84b9faadd72c98f035
+      internalID: -1060801528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TM_LevelBorder_Test_6
+      name: A_PlayerChicken_FlyingAnimationsheet_2
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 450
         y: 0
-        width: 512
-        height: 512
+        width: 225
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3bd57b48fe1016408cf2db18e88162b
-      internalID: 624005350
+      spriteID: e0a770d7a30f9ac45bc573ebb9c2a516
+      internalID: 1452126862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TM_LevelBorder_Test_7
+      name: A_PlayerChicken_FlyingAnimationsheet_3
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 675
         y: 0
-        width: 512
-        height: 512
+        width: 225
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +194,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2c37077b9b548048aee25090c079cff
-      internalID: -1724635812
+      spriteID: 23826c7fca8582e41aebea05bcb48043
+      internalID: -2077394872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_PlayerChicken_FlyingAnimationsheet_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28e09f5a511bef458b164a70653f135
+      internalID: 1762332751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_PlayerChicken_FlyingAnimationsheet_5
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dc1b5fdbb660d47a102765cc781920
+      internalID: 1104275784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_PlayerChicken_FlyingAnimationsheet_6
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 225
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce6bb98f423f7848a385d9951169fea
+      internalID: 722243155
       vertices: []
       indices: 
       edges: []
@@ -295,14 +274,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TM_LevelBorder_Test_0: -1679108040
-      TM_LevelBorder_Test_1: -1396634075
-      TM_LevelBorder_Test_2: 739012851
-      TM_LevelBorder_Test_3: 1835376740
-      TM_LevelBorder_Test_4: 159093283
-      TM_LevelBorder_Test_5: 893267106
-      TM_LevelBorder_Test_6: 624005350
-      TM_LevelBorder_Test_7: -1724635812
+      A_PlayerChicken_FlyingAnimationsheet_0: -184324839
+      A_PlayerChicken_FlyingAnimationsheet_1: -1060801528
+      A_PlayerChicken_FlyingAnimationsheet_2: 1452126862
+      A_PlayerChicken_FlyingAnimationsheet_3: -2077394872
+      A_PlayerChicken_FlyingAnimationsheet_4: 1762332751
+      A_PlayerChicken_FlyingAnimationsheet_5: 1104275784
+      A_PlayerChicken_FlyingAnimationsheet_6: 722243155
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -146,7 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 6491350717812522828}
   _sprite: {fileID: 6491350717812522829}
-  _maxIdleSpeed: 2
   _maxTilt: 5
   _tiltSpeed: 20
   _jumpParticles: {fileID: 6491350718343023897}
@@ -34496,7 +34495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 33cb79fcecfe023438dba75afac9bed1, type: 2}
-  playerIndex: 1
+  playerIndex: 0
 --- !u!114 &2513651261401060730
 MonoBehaviour:
   m_ObjectHideFlags: 0
