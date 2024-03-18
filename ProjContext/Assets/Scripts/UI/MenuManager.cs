@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Demo");
+        SceneManager.LoadScene("ArtDemo");
     }
 
     public void Controls()
