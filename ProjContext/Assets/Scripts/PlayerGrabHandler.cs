@@ -48,16 +48,19 @@ public class PlayerGrabHandler : MonoBehaviour
         _box = hit.collider.gameObject;
 
         var fixedJoint2D = _box.GetComponent<FixedJoint2D>();
+        var blockBehaviour = _box.GetComponent<BlockBehaviour>();
 
-        if (!_isHolding)
+        if (!_isHolding && !blockBehaviour.GetHolding)
         {
             fixedJoint2D.enabled = true;
             fixedJoint2D.connectedBody = GetComponent<Rigidbody2D>();
+            blockBehaviour.IsHeld(true);
             _isHolding = true;
         }
-        else
+        else if(_isHolding && blockBehaviour.GetHolding)
         {
             fixedJoint2D.enabled = false;
+            blockBehaviour.IsHeld(false);
             _isHolding = false;
         }
 

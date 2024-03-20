@@ -11,17 +11,23 @@ public class BlockGoal : MonoBehaviour
         if(collision == targetBlock.GetComponent<Collider2D>())
         {
             hasBlock = true;
+            var bloc = targetBlock.GetComponent<BlockBehaviour>();
+
+            bloc.Glowing(true);
+
+            //  #  Game Manager
             levelManager.CheckBlockGoals();
-            //play blockPlaced particle
-            //playBlockInPlace Audio (type sound for dev bloc and brush stroke sound for art bloc and building sound for design bloc)
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision == targetBlock.GetComponent<Collider2D>())
-        {
+        { 
             hasBlock = false;
+            var bloc = targetBlock.GetComponent<BlockBehaviour>();
+
+            bloc.Glowing(false);
         }
     }
 
