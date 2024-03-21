@@ -4,15 +4,66 @@ using UnityEngine;
 
 public class BlockBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private GameObject isCorrect;
+    [SerializeField] private Rigidbody2D rigidbody2d;
+    [SerializeField] private float rayLength = 1.05f;
+
+    private float _gravity = 1.0f;
+    private bool isHolding;
+    private bool isGrounded = true;
+    public bool GetHolding
     {
-        
+        get { return isHolding; }       
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IsHeld(bool isHeld)
     {
-        
+        if (!isHeld)
+        {
+            isHolding = false;
+            rigidbody2d.isKinematic = true;
+            rigidbody2d.velocity = Vector2.zero; //Empty velocity value to prevent certain physics bugs
+            isGrounded = false;
+            return;
+        }
+        isHolding = true;
+        rigidbody2d.isKinematic = false;
+    }
+
+    //Invokes when the block is placed in the right goal position
+    public void Glowing(bool state)
+    {
+        isCorrect.SetActive(state);
+    }
+
+    public void ApplyGravity()
+    {
+        transform.position -= new Vector3(0, _gravity * Time.deltaTime, 0);
+    }
+
+    private void Update()
+    {
+        if (!isHolding)
+        {
+            CheckGrounded();
+            if (!isGrounded)
+            {
+                ApplyGravity();
+            }
+        }
+    }
+
+    private void CheckGrounded()
+    {
+        Vector3 leftRay = new Vector3(transform.position.x - 0.95f, transform.position.y, transform.position.z);
+        Vector3 rightRay = new Vector3(transform.position.x + 0.95f, transform.position.y, transform.position.z);
+
+        RaycastHit2D hitL = Physics2D.Raycast(leftRay, Vector2.down, rayLength);
+        RaycastHit2D hitR = Physics2D.Raycast(rightRay, Vector2.down, rayLength);
+
+        Debug.DrawRay(leftRay, Vector3.down, Color.cyan, rayLength);
+        Debug.DrawRay(rightRay, Vector3.down, Color.cyan, rayLength);
+
+        isGrounded = hitL.collider != null || hitR.collider != null;
     }
 }

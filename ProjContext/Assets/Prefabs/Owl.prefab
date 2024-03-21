@@ -153,9 +153,9 @@ MonoBehaviour:
   _moveParticles: {fileID: 6491350717086534074}
   _landParticles: {fileID: 6491350716748713952}
   _footsteps:
-  - {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
-  - {fileID: 8300000, guid: b5803c17557c59c40bf3a6d69cb46cb3, type: 3}
-  - {fileID: 8300000, guid: 1876767bf7cbf284394dc3817af9593c, type: 3}
+  - {fileID: 8300000, guid: 97292c2ef2e170a4dbc27ebf241811db, type: 3}
+  - {fileID: 8300000, guid: 43652bba3e36c514e86bfaed841cebef, type: 3}
+  - {fileID: 8300000, guid: aace0de808b504d4dafbeb09d17b8fae, type: 3}
 --- !u!1 &6491350716748713981
 GameObject:
   m_ObjectHideFlags: 0
@@ -19582,7 +19582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6491350717581693417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.69, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34461,7 +34461,7 @@ GameObject:
   - component: {fileID: 7371941236541672136}
   m_Layer: 6
   m_Name: Owl
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34510,7 +34510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   reach: 1
   isOwl: 1
 --- !u!50 &7371941236541672139

@@ -1,18 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+/*    public static GameManager Instance;
+
+    public GameState state;
+
+    public static event Action<GameState> OnGameStateChanged;
+
+    private void Awake()
     {
-        
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        UpdateGameState(GameState.MainGame);
     }
+
+    public void UpdateGameState(GameState newState)
+    {
+        state = newState;
+
+        switch (newState)
+        {
+            case GameState.MainGame:
+                break;
+            case GameState.Victory:
+                break;
+            default:
+                break;
+        }
+
+        OnGameStateChanged?.Invoke(newState);
+    }*/
 }
+
+/*public enum GameState
+{
+    MainGame,
+    Victory
+}*/
