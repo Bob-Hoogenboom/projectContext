@@ -43,7 +43,14 @@ public class PlayerGrabHandler : MonoBehaviour
 
     public void Grab()
     {
-        if (hit.collider == null) return;
+        if (hit.collider == null)
+        {
+            if (_isHolding)
+            {
+                _isHolding = false;
+            }
+            return;
+        }
 
         _box = hit.collider.gameObject;
 
@@ -63,7 +70,6 @@ public class PlayerGrabHandler : MonoBehaviour
             blockBehaviour.IsHeld(false);
             _isHolding = false;
         }
-
     }
 
     public void GrabHandlerLeft(bool isLeft)

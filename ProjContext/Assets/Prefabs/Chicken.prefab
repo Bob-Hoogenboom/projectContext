@@ -34461,7 +34461,7 @@ GameObject:
   - component: {fileID: 8698171291113436260}
   m_Layer: 6
   m_Name: Chicken
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34495,7 +34495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: e4c9c7c4d8f10e747a4433a60e8eef13, type: 2}
-  playerIndex: 0
+  playerIndex: 1
 --- !u!114 &996492066
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCorrect: {fileID: 5889277657296102089}
   rigidbody2d: {fileID: 1167962740793412639}
+  rayLength: 1.05
 --- !u!1 &1167962741624238782
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 1, b: 0.16267419, a: 1}
   m_FlipX: 0
