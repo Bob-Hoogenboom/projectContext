@@ -3,6 +3,7 @@ using UnityEngine;
 using TarodevController;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
+using UnityEngine.SceneManagement;
 
 
 
@@ -38,6 +39,14 @@ public class InputHandler : MonoBehaviour
         if (context.canceled)
         {
             _playerController.OnGrab();
+        }
+    }
+
+    public void OnRestart(CallbackContext context)
+    {
+        if (context.performed)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

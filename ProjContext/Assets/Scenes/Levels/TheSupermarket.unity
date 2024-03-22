@@ -925,11 +925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1167962740793412637, guid: b589a312db12c4949af70521c4e463d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.55
+      value: -8.22
       objectReference: {fileID: 0}
     - target: {fileID: 1167962740793412637, guid: b589a312db12c4949af70521c4e463d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.81
+      value: 2.47
       objectReference: {fileID: 0}
     - target: {fileID: 1167962740793412637, guid: b589a312db12c4949af70521c4e463d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2136,6 +2136,7 @@ MonoBehaviour:
   - {fileID: 112547545}
   - {fileID: 2130809951}
   - {fileID: 1424766184}
+  nextLevel: TheCoffeeMachine
   index: 0
 --- !u!4 &2123515323
 Transform:

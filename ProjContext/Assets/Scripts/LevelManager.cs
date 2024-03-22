@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator Win()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(nextLevel);
+        SceneManager.LoadScene(nextLevel);  
         yield return null;
     }
 }
