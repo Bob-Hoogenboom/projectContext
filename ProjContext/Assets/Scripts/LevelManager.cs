@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public GameObject[] blockGoals;
+    public string nextLevel = "MainMenu";
     public int index;
 
     private void Start()
@@ -25,7 +26,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator Win()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(nextLevel);
         yield return null;
     }
 }

@@ -5,19 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public void StartGame()
+    public void StartGame(string nextLevel)
     {
-        SceneManager.LoadScene("ArtDemo");
-    }
-
-    public void Controls()
-    {
-        SceneManager.LoadScene("Controls");
-    }
-
-    public void ReturnToMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(nextLevel);
     }
 
     public void ExitGame()
