@@ -26,7 +26,12 @@ public class LevelManager : MonoBehaviour
     IEnumerator Win()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(nextLevel);  
+        SceneManager.LoadScene("EndingScreen");  
         yield return null;
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 }
