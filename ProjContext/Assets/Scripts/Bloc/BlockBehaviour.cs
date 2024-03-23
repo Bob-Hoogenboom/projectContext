@@ -11,6 +11,8 @@ public class BlockBehaviour : MonoBehaviour
     private float _gravity = 1.0f;
     private bool isHolding;
     private bool isGrounded = true;
+
+    public GameObject happyBlock;
     public bool GetHolding
     {
         get { return isHolding; }       
@@ -24,10 +26,13 @@ public class BlockBehaviour : MonoBehaviour
             rigidbody2d.isKinematic = true;
             rigidbody2d.velocity = Vector2.zero; //Empty velocity value to prevent certain physics bugs
             isGrounded = false;
-            return;
+            return;            
         }
         isHolding = true;
         rigidbody2d.isKinematic = false;
+
+        happyBlock.SetActive(true);
+    
     }
 
     //Invokes when the block is placed in the right goal position
@@ -46,12 +51,14 @@ public class BlockBehaviour : MonoBehaviour
         if (!isHolding)
         {
             CheckGrounded();
+            happyBlock.SetActive(false);
             if (!isGrounded)
             {
                 ApplyGravity();
             }
         }
     }
+
 
     private void CheckGrounded()
     {

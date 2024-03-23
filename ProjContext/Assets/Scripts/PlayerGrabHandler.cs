@@ -45,6 +45,7 @@ public class PlayerGrabHandler : MonoBehaviour
     {
         if (hit.collider == null)
         {
+         
             if (_isHolding)
             {
                 _isHolding = false;
