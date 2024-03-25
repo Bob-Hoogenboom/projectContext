@@ -1500,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2608937809753060468, guid: 22c5da5c1fcc26a4b9603ac829c27f34, type: 3}
+      propertyPath: happyBlock
+      value: 
+      objectReference: {fileID: 307943039}
     - target: {fileID: 3376997731219322861, guid: 22c5da5c1fcc26a4b9603ac829c27f34, type: 3}
       propertyPath: m_FlipX
       value: 0

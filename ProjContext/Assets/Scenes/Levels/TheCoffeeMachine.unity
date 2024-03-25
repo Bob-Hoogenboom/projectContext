@@ -3303,7 +3303,7 @@ MonoBehaviour:
   - {fileID: 112547545}
   - {fileID: 2130809951}
   - {fileID: 1424766184}
-  nextLevel: MainMenu
+  nextLevel: EndingScreen
   index: 0
 --- !u!4 &2123515323
 Transform:
